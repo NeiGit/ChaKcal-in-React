@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import '../css/Search.css'
 import '../css/Common.css'
 import RequestManager from '../services/RequestManager'
+import AboutDialog from './AboutDialog'
 class Search extends Component {
     state = { 
         foodQuery : '',
         quantityQuery : 100,
-        fetching : false
+        fetching : false,
+        displayAboutDialog : false
     }
     render() { 
         return ( 
@@ -14,7 +16,7 @@ class Search extends Component {
                 <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <h1><span className="badge badge-secondary search-bar-badge"> ChaKcal in REACT </span></h1>
-                        <h5 className = 'about'><button className = "btn btn-about">about</button></h5>
+                        <h5 className = 'about'><button type = "button" onClick = {() => this.setState({displayAboutDialog :true})}className = "btn btn-about">about</button></h5>
                         <form className="form-inline ml-auto" onSubmit = {this.submitSearch}>
                             <div className="md-form my-0">
                                 {/* Spinner */}
@@ -34,6 +36,7 @@ class Search extends Component {
                         </form>
                     </div>
                 </nav>
+                {this.state.displayAboutDialog && <AboutDialog handleClose = {this.handleAboutDialogClose}/>}
             </div>
          );
     }
@@ -45,7 +48,6 @@ class Search extends Component {
         })
 
     }
-
 
     quantityInputChanged = e => {
         this.setState({
@@ -97,6 +99,12 @@ class Search extends Component {
     hideSpinner = () => {
         this.setState({
             fetching : false
+        })
+    }
+
+    handleAboutDialogClose = () => {
+        this.setState({
+            displayAboutDialog : false
         })
     }
 }
