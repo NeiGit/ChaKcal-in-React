@@ -1,0 +1,17 @@
+.search-bar-badge {
+    color: white;
+    background-color: rgb(64, 140, 126);
+}
+
+.search-bar-button {
+    font-size: 150%;
+    background-color: rgb(64, 140, 126);
+    border-color: black;
+}
+
+.table-remove-button {
+    font-size: 100%;
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}

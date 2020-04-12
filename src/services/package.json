@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "name": "ChaKcal-React",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Rest-Test.js",
+  "scripts": {
+    "test": "node Rest-Test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeiGit/ChaKcal---React.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NeiGit/ChaKcal---React/issues"
+  },
+  "homepage": "https://github.com/NeiGit/ChaKcal---React#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
