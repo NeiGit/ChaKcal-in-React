@@ -52,6 +52,9 @@ class App extends Component {
     render() {
       return (
         <div>
+          <Dialog >
+          <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+          </Dialog>
           <Search handleSearch = {this.handleSearch}/>
           {this.state.nutritionCharts.length > 0 && <DataTable nutritionCharts = {this.state.nutritionCharts} handleDeleteTable = {this.handleDeleteTable} handleDeleteRow = {this.handleDeleteRow} handleWeightChange = {this.handleWeightChange} />}
         </div>

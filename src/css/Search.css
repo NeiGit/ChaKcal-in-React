@@ -111,3 +111,19 @@
 }
 
 /* END SPINNER */ 
+
+.btn-about {
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-about:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+.btn-about:focus{
+  outline:0;
+}
+

@@ -14,6 +14,7 @@ class Search extends Component {
                 <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <h1><span className="badge badge-secondary search-bar-badge"> ChaKcal in REACT </span></h1>
+                        <h5 className = 'about'><button className = "btn btn-about">about</button></h5>
                         <form className="form-inline ml-auto" onSubmit = {this.submitSearch}>
                             <div className="md-form my-0">
                                 {/* Spinner */}

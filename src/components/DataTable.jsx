@@ -4,6 +4,8 @@ import Utils from '../services/Utils.js'
 import URLmanager from '../services/URLmanager.js'
 import Calculator from '../services/Calculator.js'
 import '../css/Common.css'
+import '../css/dataTable.css'
+
 
 
 class DataTable extends Component {
@@ -50,7 +52,7 @@ class DataTable extends Component {
 
         return ( 
         <div>
-            <table id="example" className="table table-striped table-bordered">
+            <table id="dataTable" className="table table-striped table-bordered dataTable-table">
                 <thead>
                     <tr>
                         <th>Food</th>
